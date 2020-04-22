@@ -16,5 +16,5 @@ npm start
 
 ### start android in emulator or devices
 ```
-npx react-native run-android
+npm run android
 ```
