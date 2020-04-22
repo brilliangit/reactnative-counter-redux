@@ -16,12 +16,12 @@ class Counter extends Component {
             <SafeAreaView style={styles.container}>
                 <Text style={styles.counterTitle}>Kurangi atau Tambahi</Text>
                 <View style={styles.counterContainer}>
-                    <TouchableOpacity onPress={() => this.props.reduxIncreaseCounter()}>
-                        <Text style={styles.buttonText}>+</Text>
-                    </TouchableOpacity>
-                    <Text style={styles.counterText}>{this.props.counter}</Text>
                     <TouchableOpacity onPress={() => this.props.reduxDecreaseCounter()}>
                         <Text style={styles.buttonText}>-</Text>
+                    </TouchableOpacity>
+                    <Text style={styles.counterText}>{this.props.counter}</Text>
+                    <TouchableOpacity onPress={() => this.props.reduxIncreaseCounter()}>
+                        <Text style={styles.buttonText}>+</Text>
                     </TouchableOpacity>
                 </View>
             </SafeAreaView >
